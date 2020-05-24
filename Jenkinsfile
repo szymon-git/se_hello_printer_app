@@ -5,11 +5,11 @@ pipeline {
         steps {
                 sh 'make deps'
               }
-        }
-        stage('Test') {
-            steps {
+      }
+      stage('Test') {
+        steps {
 	            sh 'make test'
-        	}
+        	     }
         }
     }
 }
